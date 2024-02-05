@@ -9,9 +9,13 @@
   background-color: aquamarine;
 }
 
+body{
+  font-family: 'Lato', sans-serif;
+}
+
 .container{
   width: 80vw;
-
+  /* height: 80vh; */
   margin: 20px auto;
 }
 
@@ -19,7 +23,7 @@
   width: 30%;
 }
 
-.main-right{
+.main-right{ /**** poi forse la rimuovo ***/
   width: 70%;
 }
 
@@ -79,4 +83,25 @@
 }
 .audio-message{
   width: 10%;
+}
+
+/* MEDIA QUERY */
+
+/* TABLET */
+@media screen and (max-width: 991px){
+  .main-left{
+    width: 10%;
+  }
+  .main-right{
+    width: 90%;
+  }
+  
+  .hidden{
+    display: none;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 542px){
+
 }
