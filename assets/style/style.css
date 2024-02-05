@@ -12,6 +12,7 @@
 body{
   font-family: 'Lato', sans-serif;
   background: linear-gradient(180deg, #009688 20%, #dbdbd3 0%);
+  height: 100vh;
 }
 
 img{
@@ -20,7 +21,7 @@ img{
 
 .container{
   width: 80%;
-  height: 80%;
+  height: 80vh;
   margin: 2% auto;
 
 }
@@ -138,14 +139,35 @@ img{
 
 /* RIGHT */
 
+
+/* chat box */
 .chat-box{
   background-image: url(../img/mine.jpg);
   height: 624px;
   padding: 50px;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow: scroll;
+  flex-direction: column;
 }
 
+.chat-box .message{
+  width: 440px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 5px 0;
+}
+
+.chat-box .message.sent{
+  background-color: #d5f9ba;
+  
+
+}
+
+.chat-box .message.received{
+  background-color: white;
+
+}
+
+/* bottom bar */
 .text-input{
   width: 80%;
 }
