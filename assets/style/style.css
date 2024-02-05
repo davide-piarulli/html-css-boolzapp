@@ -13,6 +13,7 @@ body{
   font-family: 'Lato', sans-serif;
   background: linear-gradient(180deg, #009688 20%, #dbdbd3 0%);
   height: 100vh;
+  overflow: hidden;
 }
 
 img{
@@ -73,7 +74,7 @@ img{
 
 /* notification */
 .notifications{
-  height: 80px;
+  /* height: 80px; */
   background-color: #8edafc;
 }
 
@@ -96,7 +97,7 @@ img{
 /* search */
 
 .chat-search{
-  height: 50px;
+  /* height: 50px; */
   background-color: #fafafa;
   padding: 15px;
 }
@@ -122,7 +123,7 @@ img{
 
 .chat-list .chat{
   width: 97%;
-  height: 80px;
+  /* height: 80px; */
   border: 1px solid #f5f5f5;
 }
 
@@ -143,7 +144,7 @@ img{
 /* chat box */
 .chat-box{
   background-image: url(../img/mine.jpg);
-  height: 624px;
+  /* height: 624px; */
   padding: 50px;
   overflow: scroll;
   flex-direction: column;
