@@ -11,5 +11,72 @@
 
 .container{
   width: 80vw;
-  margin: 10% auto;
+
+  margin: 20px auto;
+}
+
+.main-left{
+  width: 30%;
+}
+
+.main-right{
+  width: 70%;
+}
+
+.topbar{
+  height: 70px;
+}
+.bottom-bar{
+  height: 70px;
+}
+/****************** UTILITIES *****************/
+.d-flex{
+  display: flex;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+/************** SECTIONS *********************/
+
+/* LEFT */
+
+.notifications{
+  height: 80px;
+}
+
+.chat-search{
+  height: 50px;
+}
+
+/* CHAT LIST */
+
+.chat-list{
+  overflow: scroll;
+}
+
+
+.chat{
+  height: 80px;
+}
+
+.profile-pic{
+  width: 20%;
+}
+
+/* RIGHT */
+
+.chat-box{
+  padding: 50px;
+  overflow: auto;
+}
+
+.text-input{
+  width: 80%;
+}
+.emoji{
+  width: 10%;
+}
+.audio-message{
+  width: 10%;
 }
