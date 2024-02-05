@@ -70,6 +70,7 @@ img{
   object-fit: cover;
 }
 
+/* notification */
 .notifications{
   height: 80px;
   background-color: #8edafc;
@@ -90,6 +91,8 @@ img{
 .notifications .notifications-text{
   padding: 20px 0;
 }
+
+/* search */
 
 .chat-search{
   height: 50px;
@@ -117,6 +120,7 @@ img{
 }
 
 .chat-list .chat{
+  width: 97%;
   height: 80px;
   border: 1px solid #f5f5f5;
 }
