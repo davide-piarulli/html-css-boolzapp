@@ -23,11 +23,12 @@ img{
 .container{
   width: 80%;
   height: 95%;
+  box-shadow: 0px 0px 5px 0px rgba(130,130,130,1);
 }
 
 .main-left{
   width: 380px;
-  background-color: white;
+  background-color: #fafafa;
 }
 
 .main-right{
@@ -37,7 +38,7 @@ img{
 .topbar{
   height: 70px;
   background-color: #eaeaea;
-  padding: 10px;
+  padding: 10px 15px;
 }
 
 .topbar i{
@@ -70,12 +71,22 @@ img{
 /* LEFT */
 
 .main-left .topbar .profile{
-  padding: 10px 20px;
-  width: 90px;
-  /* height: 70px; */
-  border-radius: 50%;
-  overflow: hidden;
-  object-fit: cover;
+  background-color: red;
+  width: 4rem;
+
+  /* width: 90px; */
+  /* border-radius: 50%; */
+  /* overflow: hidden; */
+  /* object-fit: cover; */
+}
+
+.main-left .topbar .profile img{
+  /* aspect-ratio: 1; */
+
+}
+
+.menu{
+  padding: 15px 0;
 }
 
 /* notification */
@@ -133,6 +144,7 @@ img{
   width: 97%;
   height: 80px;
   border: 1px solid #f5f5f5;
+  background-color: white;
 }
 
  .profile-pic{
