@@ -42,6 +42,10 @@ img{
   padding: 10px 15px;
 }
 
+.topbar .menu{
+  padding: 15px 0;
+}
+
 .topbar i{
   font-size: 1.5rem;
   padding: 0 10px;
@@ -52,6 +56,7 @@ img{
   background-color: #f3eeea;
 }
 
+/* gestisce tutte le foto profilo */
 .profile-pic{
   width: 50px;
   height: 50px;
@@ -84,10 +89,6 @@ img{
 
 /* LEFT */
 
-.menu{
-  padding: 15px 0;
-}
-
 /* notification */
 .notifications{
   height: 80px;
@@ -110,8 +111,9 @@ img{
 }
 
 .notifications .notifications-text{
-  padding: 20px 0;
+  padding: 10px 0;
   line-height: 1.3;
+  width: 70%;
 }
 
 .notifications .notifications-text a{
@@ -162,7 +164,7 @@ img{
 
 .chat-list .chat .chat-message{
   padding: 20px 0;
-  width: 100%;
+  width: 70%;
   position: relative;
 }
 .chat-list .chat .chat-message span:nth-child(3),
@@ -193,20 +195,59 @@ img{
 }
 
 .chat-box .message{
-  width: 440px;
+  width: 60%;
   border-radius: 10px;
   padding: 20px;
+  padding-right: 30px;
   margin: 5px 0;
+  position: relative;
+}
+
+.chat-box .message i{
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  font-size: 0.9rem;
+  color: #bec1c3;
+  cursor: pointer;
+}
+
+.chat-box .message .time-message{
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+  font-size: 0.6rem;
+  color: #bec1c3;
+}
+
+.chat-box .message .message-info{
+  position: absolute;
+  right: 15px;
+  top: 35px;
+  text-align: center;
+  line-height: 2;
+  font-size: 0.8rem;
+  background-color: white;
+  border-radius: 5px;
+  width: 150px;
+  height: 60px;
+  padding: 5px;
+  box-shadow: 0px 0px 15px 2px rgba(148,148,148,1);
+  display: none;
+}
+
+.chat-box .message i:hover .message-info{
+ display: block;
 }
 
 .chat-box .message.sent{
   background-color: #d5f9ba;
-  
-
+  align-self: self-end;
 }
 
 .chat-box .message.received{
   background-color: white;
+  align-self: self-start;
 
 }
 
@@ -256,6 +297,10 @@ img{
   }
   .main-left{
     width: 90px;
+  }
+  .chat-list{
+    overflow: scroll;
+    height: calc(100% - 70px);
   }
   .hidden{
     display: none;
