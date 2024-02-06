@@ -9,7 +9,7 @@
   /* background-color: aquamarine; */
 }
 
-body{
+body{ /***** flexare il body****/
   font-family: 'Lato', sans-serif;
   background: linear-gradient(180deg, #009688 20%, #dbdbd3 0%);
   height: 100vh;
@@ -22,22 +22,20 @@ img{
 
 .container{
   width: 80%;
-  height: 80vh;
-  margin: 2% auto;
-
+  height: 95%;
 }
 
 .main-left{
-  width: 30%;
+  width: 380px;
   background-color: white;
 }
 
-.main-right{ /**** poi forse la rimuovo ***/
-  width: 70%;
+.main-right{
+  flex-grow: 1;
 }
 
 .topbar{
-  /* height: 70px; */
+  height: 70px;
   background-color: #eaeaea;
   padding: 10px;
 }
@@ -59,6 +57,14 @@ img{
 .justify-between{
   justify-content: space-between;
 }
+
+.justify-center{
+  justify-content: center;
+}
+
+.align-center{
+  align-items: center;
+}
 /************** SECTIONS *********************/
 
 /* LEFT */
@@ -74,7 +80,7 @@ img{
 
 /* notification */
 .notifications{
-  /* height: 80px; */
+  height: 80px;
   background-color: #8edafc;
 }
 
@@ -97,33 +103,35 @@ img{
 /* search */
 
 .chat-search{
-  /* height: 50px; */
+  height: 50px;
   background-color: #fafafa;
-  padding: 15px;
+  padding: 5px;
 }
 
 .chat-search .search-box{
-  width: 98%;
+  width: 100%;
   background-color: white;
   color: #dadbdd;
   border: 1px solid #f5f5f5;
+  padding: 10px 15px;
 }
 
 .chat-search .search-box input{
   border: none;
   width: 90%;
+  padding-left: 15px;
 }
 
 /* CHAT LIST */
 
 .chat-list{
   overflow: scroll;
-  height: 570px;
+  height: calc(100% - 200px);
 }
 
 .chat-list .chat{
   width: 97%;
-  /* height: 80px; */
+  height: 80px;
   border: 1px solid #f5f5f5;
 }
 
@@ -131,7 +139,7 @@ img{
   width: 80px;
   border-radius: 50%;
   overflow: hidden;
-  /* margin: 10px; */
+  margin: 10px;
 }
 
 .chat-list .chat .chat-message{
@@ -144,7 +152,7 @@ img{
 /* chat box */
 .chat-box{
   background-image: url(../img/mine.jpg);
-  /* height: 624px; */
+  height: calc(100% - 140px);
   padding: 50px;
   overflow: scroll;
   flex-direction: column;
@@ -169,13 +177,38 @@ img{
 }
 
 /* bottom bar */
-.text-input{
+.bottom-bar .icon{
+  width: 10%;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.bottom-bar .icon i{
+  color: #6b7376;
+  font-size: 1.7rem;
+}
+
+.bottom-bar .text-input{
   width: 80%;
 }
-.emoji{
-  width: 10%;
+
+.bottom-bar .text-input .new-message{
+  width: 100%;
+  background-color: white;
+  color: #dadbdd;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 15px 0;
 }
-.audio-message{
+
+.bottom-bar .text-input .new-message input{
+  border: 1px solid #f5f5f5;
+  border: none;
+  width: 100%;
+  color: #a8a8a8;
+}
+
+.bottom-bar .audio-message{
   width: 10%;
 }
 
@@ -184,17 +217,12 @@ img{
 /* TABLET */
 @media screen and (max-width: 991px){
   .container{
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
+    width: 100%;
+    height: 100%;
   }
   .main-left{
-    width: 10%;
+    width: 90px;
   }
-  .main-right{
-    width: 90%;
-  }
-  
   .hidden{
     display: none;
   }

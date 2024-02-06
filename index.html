@@ -15,7 +15,7 @@
   <!-- STYLE -->
   <link rel="stylesheet" href="assets/style/style.css">
 </head>
-<body>
+<body class="d-flex justify-center align-center">
   <div class="container d-flex debug">
 
     <!-- LEFT -->
@@ -36,7 +36,7 @@
 
 
       <!-- notifiche -->
-      <div class="notifications card d-flex hidden debug">
+      <div class="notifications card d-flex hidden">
         <div class="circle-left">
           <i class="fa-solid fa-bell-slash"></i>
         </div>
@@ -47,7 +47,7 @@
       </div>
 
       <!-- search -->
-      <div class="chat-search hidden debug">
+      <div class="chat-search hidden">
         <div class="search-box">
           <i class="fa-solid fa-magnifying-glass"></i>
           <input type="text" placeholder="Cerca o inizia una nuova chat">
@@ -148,6 +148,8 @@
 
     <!-- RIGHT -->
     <div class="main-right">
+
+
       <div class="topbar d-flex justify-between">
         <div class="profile debug">
           <div class="chat d-flex debug">
@@ -166,6 +168,9 @@
           <i class="fa-solid fa-ellipsis-vertical"></i>
         </div>
       </div>
+
+
+
       <div class="chat-box d-flex">
         <div class="message sent">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci modi neque quod dolores eveniet quisquam error dignissimos veritatis esse quam.
@@ -175,10 +180,24 @@
         </div>
 
       </div>
+
+
+
+
       <div class="bottom-bar d-flex">
-        <div class="emoji debug">emoji</div>
-        <div class="text-input debug">input di test</div>
-        <div class="audio-message debug">icona</div>
+        <div class="icon emoji">
+          <i class="fa-regular fa-face-smile"></i>
+        </div>
+
+        <div class="text-input">
+          <div class="new-message">
+            <input type="text" placeholder="Scrivi un messaggio">
+          </div>
+        </div>
+
+        <div class="icon audio-message">
+          <i class="fa-solid fa-microphone"></i>
+        </div>
       </div>
     </div>
     <!-- /RIGHT -->
