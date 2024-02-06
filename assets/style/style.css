@@ -162,9 +162,19 @@ img{
 
 .chat-list .chat .chat-message{
   padding: 20px 0;
+  width: 100%;
+  position: relative;
 }
-.chat-list .chat .chat-message span:nth-child(3){
+.chat-list .chat .chat-message span:nth-child(3),
+.chat-list .chat .chat-message span:nth-child(4) {
   color: #bec1c3;
+  font-size: 0.8rem;
+}
+
+.chat-list .chat .chat-message .last-message-time {
+  position: absolute;
+  top: 20px;
+  right: 18px;
 }
 
 /* RIGHT */
