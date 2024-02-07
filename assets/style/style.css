@@ -1,8 +1,41 @@
+:root{
+ --bg-lightgrey: #fafafa;
+ --bg-topbar: #eaeaea;
+ --bg-bottombar: #f3eeea;
+ --bg-white: #ffffff;
+ --bg-lightgreen: #d5f9ba;
+ --bg-hover-chat: #eaeaea;
+ --color-lightblue: #8edafc;
+ --color-topbar-i: #b1b1b1;
+ --color-border-chat: #f5f5f5;
+ --color-border-mainleft: #d8d8d8;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+.dark{
+  --bg-topbar: #2c2c2c;
+  --bg-lightgrey: #3d3d3d;
+  --bg-white: #2c2c2c;
+  --bg-bottombar: #2c2c2c;
+  --bg-lightgreen: #005c4b;
+  --bg-hover-chat: #383838;
+  --color-border-chat: #222222;
+  --color-border-mainleft: #222222;
+  --color-topbar-i: #ffffff;
+  .chat-box {
+    background-image: url(../img/dark-wallpaper.jpg);
+  }
+  background: #202020;
+  color: white;
+  input{
+    background-color: #2c2c2c;
+  }
+  }
 
 .debug {
   border: 1px solid black;
@@ -27,8 +60,10 @@ img {
 
 .main-left {
   width: 380px;
-  background-color: #fafafa;
-  border-right: 1px solid #d8d8d8;
+  flex-shrink: 0;
+  /* min-width: 240px; */
+  background-color: var(--bg-lightgrey);
+  border-right: 1px solid var(--color-border-mainleft);
 }
 
 .main-right {
@@ -37,7 +72,7 @@ img {
 
 .topbar {
   height: 70px;
-  background-color: #eaeaea;
+  background-color: var(--bg-topbar);
   padding: 10px 15px;
 }
 
@@ -48,12 +83,12 @@ img {
 .topbar i {
   font-size: 1.5rem;
   padding: 0 10px;
-  color: #b1b1b1;
+  color: var(--color-topbar-i);
 }
 
 .bottom-bar {
   height: 70px;
-  background-color: #f3eeea;
+  background-color: var(--bg-bottombar);
 }
 
 /* gestisce tutte le foto profilo */
@@ -94,7 +129,7 @@ img {
 .notifications {
   height: 80px;
   width: 100%;
-  background-color: #8edafc;
+  background-color: var(--color-lightblue);
 }
 
 .notifications .circle-left {
@@ -107,14 +142,14 @@ img {
 }
 
 .notifications .circle-left i {
-  color: #8edafc;
+  color: var(--color-lightblue);
   font-size: 1.3rem;
   line-height: 50px;
 }
 
 .notifications .notifications-text {
-  padding: 10px 3px;
-  line-height: 1.2;
+  padding: 15px 3px;
+  line-height: 1.5;
   width: calc(100% - 65px);
 }
 
@@ -127,20 +162,21 @@ img {
 
 .chat-search {
   height: 50px;
-  background-color: #fafafa;
+  background-color: var(--bg-lightgrey);
   padding: 5px;
 }
 
 .chat-search .search-box {
   width: 100%;
-  background-color: white;
+  background-color: var(--bg-white);
   color: #b6b9bb;
-  border: 1px solid #f5f5f5;
+  /* border: 1px solid #f5f5f5; */
   padding: 10px 15px;
 }
 
 .chat-search .search-box input {
   color: #afafaf;
+  border-radius: 5px;
   border: none;
   width: calc(100% - 20px);
   padding-left: 15px;
@@ -156,8 +192,12 @@ img {
 .chat-list .chat {
   width: 97%;
   height: 80px;
-  border: 1px solid #f5f5f5;
-  background-color: white;
+  border: 1px solid var(--color-border-chat);
+  background-color: var(--bg-white);
+}
+
+.chat-list .chat:hover{
+  background-color: var(--bg-hover-chat);
 }
 
 .chat-list .chat .profile-pic {
@@ -231,7 +271,7 @@ img {
   text-align: center;
   line-height: 2;
   font-size: 0.8rem;
-  background-color: white;
+  background-color: var(--bg-white);
   border-radius: 5px;
   width: 150px;
   height: 60px;
@@ -241,17 +281,17 @@ img {
   z-index: 999;
 }
 
-.chat-box .message .box i:hover .message-info {
+.chat-box .message .box:hover .message-info {
   display: block;
 }
 
 .chat-box .message.sent {
-  background-color: #d5f9ba;
+  background-color: var(--bg-lightgreen);
   align-self: self-end;
 }
 
 .chat-box .message.received {
-  background-color: white;
+  background-color: var(--bg-white);
   align-self: self-start;
 
 }
@@ -274,7 +314,7 @@ img {
 
 .bottom-bar .text-input .new-message {
   width: 100%;
-  background-color: white;
+  background-color: var(--bg-white);
   color: #dadbdd;
   border-radius: 5px;
   padding: 10px 15px;
@@ -303,6 +343,7 @@ img {
 
   .main-left {
     width: 90px;
+    min-width: 90px;
   }
 
   .chat-list {
